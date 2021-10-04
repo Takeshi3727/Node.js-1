@@ -1,8 +1,10 @@
-var name = 'Takeshi';
+const name = 'Takeshi';
 var age = 30;
-var hasHobbies = true;
+const hasHobbies = true;
 
-function summarizeUser(userName, userAge, userHobby) {
+
+
+const summarizeUser = (userName, userAge, userHobby) => {
   return (
     'Name is ' +
     userName +
@@ -13,4 +15,11 @@ function summarizeUser(userName, userAge, userHobby) {
     );
 }
 
-console.log(summarizeUser(name, age, hasHobbies))
+const add = (a, b) => a + b;
+
+const addOne = a => a + 1;
+
+console.log(add(1, 2));
+console.log(addOne(1));
+console.log(summarizeUser(name, age, hasHobbies));
+
